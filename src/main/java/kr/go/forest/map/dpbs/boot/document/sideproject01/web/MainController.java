@@ -1,6 +1,9 @@
 package kr.go.forest.map.dpbs.boot.document.sideproject01.web;
 
+import org.springframework.stereotype.Controller;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestMapping;
+import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.util.function.Function;
 
@@ -10,18 +13,22 @@ import java.util.function.Function;
  * @author 김재형
  * @date 2025-02-06
  */
+@Controller
 @RequestMapping("/")
 public class MainController {
 
 
-     public String main () {
-         return "index";
-     }
+//     public void main () {
+//         return "index";
+//     }
 
-     public void test () {
+     @GetMapping("test")
+     public String test () {
 
          Function<String, String> f = s -> s.equals("Y") ? "true" : "false";
 
-         System.out.println("f : " + f);
+         System.out.println("f : " + f.apply("Y"));
+
+         return "test";
      }
 }
