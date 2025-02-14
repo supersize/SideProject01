@@ -1,4 +1,4 @@
-package kr.go.forest.map.dpbs.boot.document.sideproject01;
+package com.supersize.sideproject01;
 
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;

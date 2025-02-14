@@ -1,4 +1,4 @@
-package kr.go.forest.map.dpbs.boot.document.sideproject01.web;
+package com.supersize.sideproject01.web;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
